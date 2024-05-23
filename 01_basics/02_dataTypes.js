@@ -14,11 +14,30 @@ undefined -- without initialize
 Symbol -- unique
 bigInt -- for big data
 
+* for symbol example
+let first  = symbol('123")
+let second = symbol('123')
+
+console.log(first == second)    // false
+
+
 Non-Primitive -> 
 Array
 object
+function
 
+const name = [Shrey,Riya,Kayu]
+const Student = {
+name : Sanaya,
+age : 20,
+id : 1
+}
+const myfun = fucntion(){
+  console.log("Hello world")
+}
 */
+
+
 // consol.log(typeof "");
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object
