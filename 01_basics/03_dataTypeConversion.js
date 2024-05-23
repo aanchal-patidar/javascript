@@ -33,5 +33,36 @@ Conversion in boolean
 "abhd" => true
 */
 let otherToboolean = Boolean(score);
-console.log(otherToboolean)
+// console.log(otherToboolean)
 
+
+//*************************** operations ****************************************/
+
+
+let a = 2
+let c = "3"
+let b = 3
+
+let sum = a+b+c
+console.log(sum);
+
+/* 2+"3" => 23 
+    "2"+3 => 23
+    2+3+"7" =>57
+    "3"+5+5 => 355
+    "3"+"7"=> 37
+    
+    Arithmatic operations
+    add => 2+3
+    sun => 2-3
+    mul => 2*3
+    div => 4/3
+    mod => 3%3
+
+
+*/
+str1 = "Aanchal"
+str2 = "Patidar"
+
+let S = str1+str2 
+console.log(S)
