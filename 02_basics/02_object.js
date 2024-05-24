@@ -1,4 +1,4 @@
-
+/*************** Literal type object creation ******************/
 const sym = Symbol("MySymbol")
 // we have to define sym in square braces to treat as an symbol otherwise it will treat string`
 const details = {
@@ -37,5 +37,35 @@ details.greetingtwo = function(){
 }
 console.log(details.greeting()); 
 
+/**************** Singleton type object Creation *********************/
+//const obj = new Object()  // const obj = {}; // both are same
+const obj1 = {2 : "a",3 : "b"}
+const obj2 = {4:"d" , 7 : "y"}
+
+const obj = {obj1 , obj2}
+
+console.log(obj) // mearge two objects in one object with paranthesis but not in the proper way.
+
+const obj3 = {...obj1,...obj2} // merge two arrays in proper ways
+console.log(obj3)
+const obj4 = Object.assign({},obj1,obj2) // we use cusly braces it is good practrice to use
+console.log(obj4)
+
+console.log(object.keys(details)) // It gives the keys in the form of arrays
+console.log(object.values(details)) // It gives the values in the form of arrays
+console.log(object.entries(details)) // It will convert every key value pair in the array form in array
+console.log(details.hasOwnProperty("age")
+
+const multiObj = [
+    {
+        name : "Riya",
+        age : 14
+    },
+    {
+        fullName : "Riya Patel",
+        email : "riya@gmail.com"
+    }
+]
+console.log(multiObj[1].fullName)
 
 
