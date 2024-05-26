@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create, edit and remove nodes</title>
+</head>
+<body style="background-color: rgb(24, 20, 20); color: white;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+
+    // create a node
+    function addLang (langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('li').appendChild(li)
+    }
+addLang("python")
+addLang("Java")
+
+// create a node in optimize way
+function addoptlang(langName){
+    const li = document.createElement('li')
+    const textnode = document.createTextNode(langName)
+    li.appendChild(textnode)
+    document.querySelector('li').appendChild(li)
+}
+addoptlang("R programming")
+addoptlang("Cpp")
+
+//Edit
+const secElement = document.querySelector('li:nth-child(2)')
+const li = document.createElement('li');
+li.textContent = 'Typescript'
+// li.innerHTML = "Typescript"
+secElement.replaceWith(li)
+
+// another way to edit
+// const firstChild = document.querySelector('li:first-child')
+// firstChild.outerHTML = "<li> SQL </li>"
+
+//remove
+// const lastNode = document.querySelector('li:last-child')
+// lastNode.remove()
+
+
+</script>
+</html>
