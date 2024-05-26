@@ -44,3 +44,26 @@ const languages = [
                                 // java
                                 // js
  });
+
+
+//  const pr = programming.forEach((item) => {
+//     return item;
+//  })
+
+//  console.log(pr);  // undefined 
+ // foreach does not return any value 
+
+ const arr = [1,2,3,4,5,6,7,7,8]
+
+//  const filteredArr = arr.filter((num) => (num > 4))
+//  console.log(filteredArr);   // [5,6,7,7,8]
+
+// we also do the same example with foreachloop
+
+const newArr = []
+const newArr1 = arr.forEach((item) => {
+    if(item > 4)
+        newArr.push(item);
+})
+console.log(newArr1);  // [5,6,7,7,8]
+
