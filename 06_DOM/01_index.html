@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+    <style>
+        .bg-color{
+            background-color: rgb(31, 27, 27);
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(27, 24, 24); color: white;">
+    <div class="bg-color">
+        <h1 id="title"class="heading">This is heading</h1>
+        <p class="para">Lorem ipsum dolor sit amet.<span visibility="hiddden">this is span tag</span></p>
+        <p class="para">Lorem ipsum dolor sit amet.</p>
+        <p class="para">Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
+
+
+
+<!-- +++++++++++++++++++++++++++++++++++++ Note ++++++++++++++++++++++++++++++++++++++++++++
+objects  ->  window -> document -> head , body -> other tags inside it -->
+
+<!-- 
+all object starts with object. --- methods
+getElementById()
+getElementByTag()
+querySelector()
+queryselectorAll()
+
+---properties
+innerHTML
+ineerText
+textContent
+style 
+
+ if we have multiple tags with same class using queryselectorAll we get nodelist
+in the node list forEach function is available sothat we can modify each value according to us
+
+if we have multiple li tags then it will generate HTML Collection in this foreach method is not available
+so we need to convert it into array by using "Array.from" method -->
