@@ -6,11 +6,11 @@ const user = {
     loggedOut : false,
     greetings : ()=> {
         // console.log(`greeting to the ${this.username}`);
-        console.log(this);              // print all information about this object
+        console.log(this);              //this keyword is not work in arrow functionit will not print all information about this object
     }
 
 }
-console.log(this);              // print empty object becasue it is available in the node environment
+// console.log(this);              // print empty object becasue it is available in the node environment
 // console.log(user.username);
 // console.log(user.greetings());
 
